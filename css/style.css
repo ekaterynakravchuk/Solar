@@ -16,6 +16,20 @@ body {
     line-height: 19px;
     font-weight: 400;
 }
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #868585;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+/* header */
 .header {
     background-image: url(../images/header-bg.jpg);
     height: 100vh;
@@ -69,4 +83,31 @@ body {
 }
 .social__link {
     margin: 0 10px;
+}
+/* servises */
+.service {
+    margin-bottom: 150px;
+}
+.service__inner {
+    display: flex;
+}
+.service__content {
+    flex-basis: 510px;
+    margin-right: 90px;
+}
+.service__box {
+    margin-bottom: 50px;
+}
+.service__box-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #303030;
+}
+.service__box-text {
+    color: #303030;
+}
+.service__img {
+    object-fit: cover;
 }
