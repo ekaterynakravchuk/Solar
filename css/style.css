@@ -205,3 +205,16 @@ body {
     line-height: 57px;
     color: #fff;
 }
+/* clients */
+
+.clients {
+    margin-bottom: 150px;
+}
+.clients-slider__box {
+    display: flex;
+}
+.clients-slider__box-img {
+    flex-basis: 510px;
+    margin-right: 90px;
+    float: left;
+}
