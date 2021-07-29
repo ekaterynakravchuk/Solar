@@ -12,7 +12,7 @@ a {
 }
 body {
     font-family: 'Noto Sans', sans-serif;
-    font-style: 14px;
+    font-size: 14px;
     line-height: 19px;
     font-weight: 400;
     color: #303030;
@@ -171,7 +171,10 @@ body {
 .slick-right {
     left: 340px;
 }
-.slick-arrow:hover .arrow-color {
+.slick-arrow path {
+    transition: fill .5s;
+}
+.slick-arrow:hover path {
     fill:#A9A32A;
 }
 .info__list {
@@ -216,5 +219,54 @@ body {
 .clients-slider__box-img {
     flex-basis: 510px;
     margin-right: 90px;
-    float: left;
+    margin-bottom: 30px;
+}
+.clients-slider__box-title {
+    max-width: 480px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.clients-slider__box-list {
+    margin-left: 50px;
+    margin-bottom: 65px;
+}
+.client-slider__box-item {
+    margin-bottom: 15px;
+}
+/* steps */
+
+.steps {
+    margin-bottom: 150px;
+}
+.steps__inner {
+    display: flex;
+}
+.steps__inner-img {
+    flex-basis: 600px;
+    object-fit: cover;
+}
+.steps__content {
+    flex-basis: 510px;
+    margin-right: 90px;
+}
+.steps__list {
+    list-style: none;
+    counter-reset: number;
+}
+.steps__list-item {
+    counter-increment: number;
+    margin-bottom: 30px;
+}
+.steps__list-item::before {
+    content: '0' counter(number);
+    color: #868585;
+}
+.steps__list-title {
+    margin-bottom: 2px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    margin-top: 10px;
 }
